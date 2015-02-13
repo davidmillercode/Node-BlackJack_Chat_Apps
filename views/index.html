@@ -1,0 +1,55 @@
+<p>BJ App - <a href="/chat">Go To Chat App</a></p>
+<div id="blackjack_wrapper">
+    <div id="dealer_div">
+
+        <label for="dealer_score" class="dealer_identity">Dealer:</label>
+
+        <input type="text" id="dealer_score" class="dealer_identity" size="4" disabled>
+        <button type="button" id="start_button">Start Deal</button><br>
+        <div id="dealer_card_images"></div> <!-- card images will be added to this via JS -->
+
+    </div>
+
+    <div id="player_div">
+
+        <label for="user_score">Player:</label>
+        <input type="text" id="user_score" size="4" disabled>
+
+        <label for="user_result">Result:</label>
+        <input type="text" id="user_result" size="8" disabled>
+
+        <button type="button" id="one_more_hand_button">Play Again</button><br>
+
+
+        <div id="player_card_images"></div><br><!-- card images will be added to this via JS -->
+
+
+        <div id="betting_div">
+            <label for="wager_amt">Wager: </label>
+            <input type="text" id="wager_amt" size="6" value="1">
+            <label for="chip_count">Total Chips</label>
+            <input type="text" id="chip_count" size = "6" disabled>
+        </div><br>
+
+        <div id="action_buttons_container">
+            <button type="button" id="stand_button" class="action_buttons">Stand</button>
+            <button type="button" id="hit_button" class="action_buttons">Hit Me</button>
+            <button type="button" id="double_down_button" class="action_buttons">Double-Down</button>
+        </div>
+
+    </div>
+    <table id="top_scores" style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>High Score</th>
+        </tr>
+        {{#each highscorers}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{score}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</div>
+
+<script src="/js/blackjack.js"></script>

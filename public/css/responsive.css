@@ -1,0 +1,190 @@
+@media screen and (min-width: 480px) {
+
+    /********************************
+    TWO COLUMN LAYOUT
+    ********************************/
+
+    #primary {
+        width:50%;
+        float:left;
+    }
+
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+
+    /********************************
+    PAGE: PORTFOLIO
+    ********************************/
+
+    #gallery li { /* the pictures and their comments */
+        width: 28.333333333333333333333333333333%;
+    }
+
+    #gallery li:nth-child(4n) { /* this applies the bracketed rules only to every fourth <li> */
+        clear:left;
+    }
+
+    /********************************
+    PAGE: ABOUT
+    ********************************/
+
+    .profile-photo {
+        float:left;
+        margin: 0 5% 80px 0;
+    }
+
+    /***********************************
+    PAGE: QUIZ
+    ***********************************/
+    #quiz_question {
+        font-size: 1.4rem;
+    }
+    .quiz_answer {
+        font-size: 1.2rem;
+    }
+
+    #score_keeper_div { /* Move to same line as next question button */
+        display: inline-block;
+    }
+
+    /***********************************
+    PAGE: BLACKJACK
+    ***********************************/
+    #top_scores{
+        width:60%;
+    }
+
+
+    /***********************************
+    PAGE: PHOTO ALBUM
+    ***********************************/
+    .photo_album_img {
+        margin: 1.5%;
+        width:46%;
+    }
+}
+
+@media screen and (min-width: 660px) {
+
+    /********************************
+    HEADER
+    ********************************/
+    nav {                   /* puts nav on right side when big */
+        background: none;
+        float: right;
+        font-size:1.125em;
+        margin-right:5%;
+        text-align: right;
+        width:45%
+    }
+
+    #logo {
+        float:left;
+        margin-left:5%;
+        text-align:left;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size:0.825em;
+        margin-bottom:20px;
+    }
+
+    header {
+        border-bottom: 5px solid darkslateblue;
+        margin-bottom:40px;
+    }
+
+    /*********************************
+    BLACKJACK
+    *********************************/
+    /**********************************************************************************************************************
+BLACKJACK: STARTING SITUATION
+**********************************************************************************************************************/
+    .action_buttons {
+        visibility: hidden;
+        background-color: steelblue;
+        color:white;
+        margin: 15px 0 12px 0;
+    }
+
+    #start_button {
+        margin: 15px 0 15px 30px;
+        background-color: lightseagreen;
+        color: white;
+    }
+    #top_scores{
+        width:40%;
+    }
+    /**********************************************************************************************************************
+    BLACKJACK: PLAYERS
+    **********************************************************************************************************************/
+
+    #dealer_div {
+        width: 40%;
+        clear: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #player_div {
+        width: 52%;
+        clear: none;
+        margin: 30px 0 0 0;
+        padding: 0;
+        float: right;
+    }
+
+    /*make action buttons fit player div (next three items)*/
+    .action_buttons{
+        margin: 1%;
+    }
+    #stand_button{
+        width: 21%;
+    }
+    #hit_button{
+        width: 26%;
+    }
+    #double_down_button{
+        width:39%;
+    }
+    #dealer_card_images {
+        width: 100%;
+        height: 130px;
+        background: green;
+        clear:left;
+        display: inline-block;
+    }
+
+    #player_card_images {
+        width: 100%;
+        height: 130px;
+        background: green;
+        display: inline-block;
+        clear: left;
+    }
+
+    #start_button {
+        padding: 6%;
+    }
+
+    #one_more_hand_button {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 8%;
+    }
+
+    #user_score {
+        width: 18px;
+    }
+
+    #dealer_score {
+        width: 18px;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "BJ_Chat_App",
+    "description": "Blackjack and Chat applications",
+    "version": "0.0.1",
+    "main": "app.js",
+    "dependencies": {
+        "express": "4.x",
+        "hbs": "*",
+        "body-parser": "*",
+        "mongoose": "3.8.x",
+        "socket.io": "1.3.x"
+    },
+    "engines" : {
+        "node": "*"
+    }
+}
